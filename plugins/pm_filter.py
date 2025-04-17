@@ -748,7 +748,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("checksub"):
         links = await is_subscribed(client, query=query)
         if AUTH_CHANNEL and len(links) >= 1:
-            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟs ᴍᴀʜɴ! 😒", show_alert=True)
+            await query.answer("⚓️ 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙅𝙤𝙞𝙣", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         if file_id == "send_all":
